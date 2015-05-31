@@ -1,4 +1,4 @@
-# MvvmCross-Tutorals
+﻿# MvvmCross-Tutorals
 a MvvmCross Tutorial for Starter
 
 This is a new practice of [Tip Calc A first app](https://github.com/MvvmCross/MvvmCross/wiki/Tip-Calc-A-first-app).
@@ -20,6 +20,6 @@ which contains some file, which names as follow:
 `Xamarin.iOS.Unified.xml`
 `Xamarin.iOS.xml`
 
-when we create a pcl project, we should select these for meet pcl 259.
+when we create a pcl project, we should select these for meetting pcl 259.
 
 - Second, ...
