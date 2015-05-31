@@ -1,0 +1,40 @@
+﻿<views:MvxWindowsPage
+    xmlns:views="using:Cirrious.MvvmCross.WindowsCommon.Views"
+    x:Class="TipCalc.UI.WindowsCommon.Views.TipView"
+    DataContext="{Binding DefaultViewModel, RelativeSource={RelativeSource Self}}"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TipCalc.UI.WindowsCommon.Views"
+    xmlns:common="using:TipCalc.UI.WindowsCommon.Common"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+        <StackPanel>
+            <TextBlock
+                Text="SubTotal"
+                />
+            <TextBox 
+                Text="{Binding SubTotal, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
+                />
+
+            <TextBlock
+                Text="Generosity"
+                />
+            <Slider 
+                Value="{Binding Generosity,Mode=TwoWay}" 
+                SmallChange="1" 
+                LargeChange="10" 
+                Minimum="0" 
+                Maximum="100" />
+
+            <TextBlock
+                Text="Tip"
+                />
+            <TextBlock 
+                Text="{Binding Tip}" 
+                />
+        </StackPanel>
+    </Grid>
+</views:MvxWindowsPage>
